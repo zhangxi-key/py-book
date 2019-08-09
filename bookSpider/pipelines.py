@@ -10,8 +10,8 @@ class BookspiderPipeline(object):
         targetPath = curPath + tempPath
         if not os.path.exists(targetPath):
             os.makedirs(targetPath)
-
-        filename_path = targetPath+'/'+str(item['book_list_name'])+'.txt'
+        book_list_name = str(str(item['i'])+item['book_list_name'])
+        filename_path = targetPath+'/'+book_list_name+'.txt'
         print('------------')
         print(filename_path)
 

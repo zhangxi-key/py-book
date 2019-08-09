@@ -5,6 +5,7 @@ import scrapy
 
 class BookspiderItem(scrapy.Item):
     # define the fields for your item here like:
+    i = scrapy.Field()
     book_name = scrapy.Field()
     book_img = scrapy.Field()
     book_author = scrapy.Field()
